@@ -1,0 +1,20 @@
+{
+  "schema_version": "3.0.0",
+  "packages": [
+    {
+      "name": "WordPress Salts",
+      "details": "https://github.com/idleberg/sublime-wordpress-salts",
+      "labels": [
+        "wordpress",
+        "wordpress salts",
+        "cryptography"
+      ],
+      "releases": [
+        {
+          "sublime_text": "*",
+          "tags": true
+        }
+      ]
+    }
+  ]
+}
