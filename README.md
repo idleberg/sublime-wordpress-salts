@@ -26,7 +26,7 @@ With the [`auto_upgrade`](https://packagecontrol.io/docs/settings#setting-auto_u
 
 This package exposes the *WordPress Salts: Insert* command in your [Command Palette](http://docs.sublimetext.info/en/latest/reference/command_palette.html), but can also be triggered using shortcuts.
 
-Action                  | Operating System | Shortcut
+Command                 | Operating System | Shortcut
 ------------------------|------------------|-----------------------------------------------------------------------------------------
 WordPress Salts: Insert | Linux, Windows   | <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>W</kbd>, <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>P</kbd>
 WordPress Salts: Insert | macOS            | <kbd>Ctrl</kbd>+<kbd>W</kbd>, <kbd>Ctrl</kbd>+<kbd>P</kbd>
