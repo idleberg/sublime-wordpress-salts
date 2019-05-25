@@ -18,12 +18,10 @@ WORDPRESS_SALTS = [
 
 
 class WordpressSaltsCommand(sublime_plugin.TextCommand):
-
     """WordpressSalts command."""
 
     def run(self, edit):
         """Run the WordpressSalts command."""
-
         salt_length_setting = self.load_settings("salt_length") or 64
         salt_length = salt_length_setting if isinstance(salt_length_setting, int) and salt_length_setting >= 64 else 64
 
@@ -50,7 +48,6 @@ class WordpressSaltsCommand(sublime_plugin.TextCommand):
 
     def create_php_line(self, key, salt_length, max_length):
         """Generate PHP line for key and salt."""
-
         prettify = self.load_settings("prettify")
         separator = " " if prettify is not True else " ".ljust(max_length - len(key))
         random_string = self.get_random_string(salt_length)
@@ -61,7 +58,6 @@ class WordpressSaltsCommand(sublime_plugin.TextCommand):
 
     def create_yaml_line(self, key, salt_length):
         """Generate YAML line for key and salt."""
-
         random_string = self.get_random_string(salt_length)
         result = "{}: \"{}\"\n".format(key.lower(), random_string)
 
@@ -69,7 +65,6 @@ class WordpressSaltsCommand(sublime_plugin.TextCommand):
 
     def create_env_line(self, key, salt_length):
         """Generate DotEnv line for key and salt."""
-
         random_string = self.get_random_string(salt_length)
         result = "{}='{}'\n".format(key, random_string)
 
@@ -77,12 +72,10 @@ class WordpressSaltsCommand(sublime_plugin.TextCommand):
 
     def get_random_string(self, salt_length):
         """Generate Drandom string at specified length."""
-
         result = "".join(random.SystemRandom().choice(VALID_CHARACTERS) for _ in range(salt_length))
 
         return result
 
     def load_settings(self, key):
         """Load package settings."""
-
         return sublime.load_settings("WordPress Salts.sublime-settings").get(key)
