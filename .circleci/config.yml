@@ -1,0 +1,40 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.6.1
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "WordPress Salts.py" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
+
+      - run:
+          name: Install dependencies
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            pip install flake8 pep257
+
+      - save_cache:
+          paths:
+            - ./venv
+          key: v1-dependencies-{{ checksum "WordPress Salts.py" }}
+
+      - run:
+          name: Run tests
+          command: |
+            . venv/bin/activate
+            flake8 WordPress\ Salts.py --max-line-length=120
+            pep257 WordPress\ Salts.py
+
+      - store_artifacts:
+          path: test-reports
+          destination: test-reports

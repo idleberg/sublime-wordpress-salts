@@ -1,0 +1,10 @@
+{
+    // Minimum length matches the WordPress default of 64 characters
+    "salt_length": 64,
+
+    // Aligns PHP define name and value
+    "prettify": true,
+
+    // Controls whether to show error in message dialog or status bar
+    "error_message": true
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "keys": [
+      "ctrl+alt+w", "ctrl+alt+p"
+    ],
+    "command": "wordpress_salts",
+    "context": [
+      {
+        "key": "selector",
+        "operator": "equal",
+        "operand": "source.php, source.yaml, source.env"
+      }
+    ]
+  }
+]
