@@ -4,7 +4,7 @@
 [![GitHub](https://flat.badgen.net/github/release/idleberg/sublime-wordpress-salts)](https://github.com/idleberg/sublime-wordpress-salts/releases)
 [![CircleCI](https://flat.badgen.net/circleci/github/idleberg/generator-atom-package-coffeescript)](https://circleci.com/gh/idleberg/sublime-wordpress-salts)
 
-Context-aware WordPress salts insertion for PHP, YAML and DotEnv files.
+Context-aware WordPress salts insertion for PHP, YAML and DotEnv files
 
 ## Installation
 
@@ -32,6 +32,11 @@ WordPress Salts: Insert | Linux, Windows   | <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd
 WordPress Salts: Insert | macOS            | <kbd>Ctrl</kbd>+<kbd>W</kbd>, <kbd>Ctrl</kbd>+<kbd>P</kbd>
 
 Also take not of the available package settings to tweak the behaviour.
+
+## Related
+
+- [atom-wordpress-salts](https://atom.io/packages/wordpress-salts)
+- [vscode-wordpress-salts](https://marketplace.visualstudio.com/items?itemName=idleberg.wordpress-salts)
 
 ## License
 
