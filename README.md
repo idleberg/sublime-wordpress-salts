@@ -31,7 +31,7 @@ Command                 | Operating System | Shortcut
 WordPress Salts: Insert | Linux, Windows   | <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>W</kbd>, <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>P</kbd>
 WordPress Salts: Insert | macOS            | <kbd>Ctrl</kbd>+<kbd>W</kbd>, <kbd>Ctrl</kbd>+<kbd>P</kbd>
 
-Also take not of the available package settings to tweak the behaviour.
+Also take note of the available package settings to tweak the behaviour.
 
 ## Related
 
