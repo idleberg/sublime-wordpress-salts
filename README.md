@@ -11,7 +11,7 @@ Context-aware WordPress salts insertion for PHP, YAML and DotEnv files without t
 ### Package Control
 
 1. Make sure you have [Package Control](https://packagecontrol.io/) installed
-2. Choose *“Install Package”* from the Command Palette (<kbd>Super</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd>)
+2. Choose *“Install Package”* from the Command Palette (<kbd>Super</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>)
 3. Type *“WordPress Salts”* and press <kbd>Enter</kbd>
 
 With the [`auto_upgrade`](https://packagecontrol.io/docs/settings#setting-auto_upgrade) setting enabled, Package Control will keep all installed packages up-to-date!
