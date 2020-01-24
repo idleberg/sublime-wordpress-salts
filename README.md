@@ -36,6 +36,7 @@ Also take note of the available package settings to tweak the default behaviour.
 
 - [atom-wordpress-salts](https://atom.io/packages/wordpress-salts)
 - [vscode-wordpress-salts](https://marketplace.visualstudio.com/items?itemName=idleberg.wordpress-salts)
+- [wp-salts-cli](https://www.npmjs.com/package/wp-salts-cli)
 
 ## License
 
