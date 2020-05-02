@@ -25,7 +25,9 @@ class WordpressSaltsCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         """Run the WordpressSalts command."""
         salt_length_setting = self.load_settings("salt_length") or MINIMUM_SALT_LENGTH
-        salt_length = salt_length_setting if isinstance(salt_length_setting, int) and salt_length_setting >= MINIMUM_SALT_LENGTH else MINIMUM_SALT_LENGTH
+        salt_length = salt_length_setting \
+            if isinstance(salt_length_setting, int) and salt_length_setting >= MINIMUM_SALT_LENGTH \
+            else MINIMUM_SALT_LENGTH
 
         scope = self.view.scope_name(self.view.sel()[0].a)
         max_length = len(max(WORDPRESS_SALTS, key=len)) + 1
@@ -45,7 +47,7 @@ class WordpressSaltsCommand(sublime_plugin.TextCommand):
                 salts_dictionary.update(self.create_json_attribute(wordpress_salt, salt_length))
             else:
                 if self.load_settings("error_message") is True:
-                     sublime.error_message(("WordPress Salts\n\nUnsupported document type {}, aborting").format(scope))
+                    sublime.error_message(("WordPress Salts\n\nUnsupported document type {}, aborting").format(scope))
                 else:
                     sublime.status_message("WordPress Salts: Unsupported document type")
 
