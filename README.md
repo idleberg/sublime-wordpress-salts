@@ -2,7 +2,7 @@
 
 [![The MIT License](https://flat.badgen.net/badge/license/MIT/blue)](https://opensource.org/licenses/MIT)
 [![GitHub](https://flat.badgen.net/github/release/idleberg/sublime-wordpress-salts)](https://github.com/idleberg/sublime-wordpress-salts/releases)
-[![CircleCI](https://flat.badgen.net/circleci/github/idleberg/generator-atom-package-coffeescript)](https://circleci.com/gh/idleberg/sublime-wordpress-salts)
+[![CircleCI](https://flat.badgen.net/circleci/github/idleberg/sublime-wordpress-salts)](https://circleci.com/gh/idleberg/sublime-wordpress-salts)
 
 Context-aware WordPress salt key generation for PHP, YAML, DotEnv and JSON files without the need of an internet-connection
 
