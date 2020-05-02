@@ -4,7 +4,7 @@
 [![GitHub](https://flat.badgen.net/github/release/idleberg/sublime-wordpress-salts)](https://github.com/idleberg/sublime-wordpress-salts/releases)
 [![CircleCI](https://flat.badgen.net/circleci/github/idleberg/generator-atom-package-coffeescript)](https://circleci.com/gh/idleberg/sublime-wordpress-salts)
 
-Context-aware WordPress salt key insertion for PHP, YAML and DotEnv files without the need of an internet-connection
+Context-aware WordPress salt key generation for PHP, YAML, DotEnv and JSON files without the need of an internet-connection
 
 ## Installation
 
