@@ -2,11 +2,11 @@
     // Minimum length matches the WordPress default of 64 characters
     "salt_length": 64,
 
-    // Aligns PHP define name and value
+    // Toggles pretty printing for PHP and JSON
     "prettify": true,
     "salt_length": 64,
 
-    // Indentation setting for JSON output
+    // Indentation setting for JSON output, depedends on pretty printing
     "indent": 2,
 
     // Controls whether to show error in message dialog or status bar

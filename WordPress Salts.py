@@ -52,7 +52,12 @@ class WordpressSaltsCommand(sublime_plugin.TextCommand):
                     sublime.status_message("WordPress Salts: Unsupported document type")
 
         if "source.json" in scope:
-            indent = self.load_settings("indent") or 2
+            prettify = self.load_settings("prettify")
+
+            indent = None \
+                if prettify is not True \
+                else self.load_settings("indent") or 2
+
             wordpress_salts = json.dumps(salts_dictionary, indent=indent)
 
         for r in self.view.sel():
