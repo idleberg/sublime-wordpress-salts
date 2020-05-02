@@ -62,7 +62,11 @@ class WordpressSaltsCommand(sublime_plugin.TextCommand):
     def create_php_line(self, key, salt_length, max_length):
         """Generate PHP line for key and salt."""
         prettify = self.load_settings("prettify")
-        separator = " " if prettify is not True else " ".ljust(max_length - len(key))
+
+        separator = " " \
+            if prettify is not True \
+            else " ".ljust(max_length - len(key))
+
         random_string = self.get_random_string(salt_length)
 
         result = "define('{}',{}'{}');\n".format(key, separator, random_string)
